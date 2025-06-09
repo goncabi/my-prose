@@ -1,0 +1,8 @@
+my-prose – A simple prose analysis CLI tool.
+
+Author: Gabriela Goncalvez
+License: License: GNU General Public License v3.0 or later
+This program is licensed under the terms of the GNU GPL v3.0 or later.
+See the LICENSE file or visit https://www.gnu.org/licenses/gpl-3.0.html.
+This project does not use cryptography.
+Third-party libraries are licensed under their respective licenses.
