@@ -17,7 +17,6 @@ target/
 *.log
 dependency-reduced-pom.xml
 release.properties
-
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml

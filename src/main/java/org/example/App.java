@@ -19,40 +19,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-
 package org.example;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.stream.Stream;
-
 public class App {
-
     public static void main(String[] args) {
-        if (args.length != 1) {
-            System.out.println("Uso: java App archivo.txt");
-            return;
-        }
-
-        Path path = Path.of(args[0]);
-
-        try {
-            String content = Files.readString(path);
-            long wordCount = content.trim().isEmpty() ? 0 : content.split("\\s+").length;
-            long charCount = content.length();
-            long lineCount;
-            try (Stream<String> lines = Files.lines(path)) {
-                lineCount = lines.count();
-            }
-
-            System.out.println("📄 Análisis del archivo: " + path.getFileName());
-            System.out.println("Palabras: " + wordCount);
-            System.out.println("Líneas: " + lineCount);
-            System.out.println("Caracteres: " + charCount);
-
-        } catch (IOException e) {
-            System.err.println("Error al leer el archivo: " + e.getMessage());
-        }
+        MySentence sentence = new MySentence();
+        System.out.println(sentence.get());
     }
 }
